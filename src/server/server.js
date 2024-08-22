@@ -22,7 +22,7 @@ app.use(express.static(path.join(__dirname, "public")));
 try {
   await mongoose.connect(process.env.DB_URI);
   console.log("Connected to MongoDB");
-} catch (er) {
+} catch (err) {
   console.log(err);
 }
 
