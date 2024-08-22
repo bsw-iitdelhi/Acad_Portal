@@ -1,0 +1,7 @@
+<%- include("partials/header.ejs") %>
+<% if(locals.first){%>
+<h2>Hi, <%= first %> Welcome to the Acad Mentor Portal</h2>
+<button onclick="window.location.href = 'http://localhost:3002/'">
+  Click here to go to login page
+</button>
+<%}%> <%- include("partials/footer.ejs") %>

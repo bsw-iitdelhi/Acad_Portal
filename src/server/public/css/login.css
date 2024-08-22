@@ -1,0 +1,194 @@
+
+.con-login{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: #EBEEEF;
+}
+.box-login{
+    box-shadow: 1px 2px 3px 4px rgba(184, 182, 182, 0.4);
+    border-radius: 12px;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+position: relative;
+    align-content: center;
+    margin: auto;
+    gap: 20px;
+    z-index: 100;
+    padding: 30px;
+    background-color: white;
+}
+/* .box-login::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: repeating-conic-gradient(from var(--a),#45f3ff 0%,#45f3ff,
+     transparent 10%
+    ,transparent 80%,#45f3ff 100%);
+    border-radius: 12px;
+    animation: animate 2.5s linear infinite;
+}
+
+@property --a{
+    syntax:'<angle>';
+    inherits:false;
+    initial-value:0deg;
+}
+@keyframes animate{
+    0%{
+        --a:0deg
+    }
+    100%{
+        --a:360deg
+    }
+} */
+
+
+.box-login form{
+    height: 100%;
+   background-color: white;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+}
+.box-e,.box-p{
+    gap: 8px;
+   flex-direction: column;   
+    display: flex;
+
+}
+.box-e h4,.box-p h4{
+    margin: 0;
+    padding: 0;
+}
+.error{
+    height:100px;
+    border-radius: 10px;
+    margin: 10px;
+    width: 300px;
+    overflow: hidden;
+    background: white;
+    position: fixed;
+    right: 0;
+    color: red;
+}
+.error-head{
+    height: 30px;
+    color: white;
+    
+    gap: 50px;
+    width: 100%;
+    font-size: large;
+    padding-left: 10px;
+    background-color: red;
+}
+.main-err{
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    gap: 15px;
+    font-size: large;
+    display: flex;
+}
+.main-err h5{
+    color: black;
+}
+.ine{
+    width: max-content;
+    
+    border-radius: 10px;
+   background-color: var(--color-bg);
+}
+.box-e input,.box-p input{
+    border: none;
+    padding: 5px;
+    background-color: var(--color-bg);
+    width: 260px;
+    border-radius: 10px;
+}
+.ini{
+    width: max-content;
+    position: relative;
+    border-radius: 10px;
+   background-color: var(--color-bg);
+}
+.ini .eye{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.box-e input:focus,.box-p input:focus{
+    outline: none;
+    
+}
+.login-head{
+    height: 40px;
+    overflow: hidden;
+    display: flex;
+    color:var(--color-primary);
+    
+}
+.login-head strong{
+    font-size: large;
+    margin: auto;
+}
+ .btn-login{
+    background-color: var(--color-primary);
+    padding: 2px;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: white;
+    margin: auto;
+    width: 235px;
+    border-radius: 10px;
+}
+.forg-kpl{
+    gap: 10px;
+    display: flex;
+}
+.check-box{
+      cursor: pointer;
+   
+
+}
+.forg-kpl strong{
+    cursor: pointer;
+    color:  var(--color-primary);
+}
+.check-box label{
+   
+    font-weight: 500;
+}
+
+.sign-link{
+    width: 260px;
+    
+    display: flex;
+    justify-content: flex-start;
+}
+.sign-link span{
+    cursor: pointer;
+    font-size: small;
+    font-weight: 500;
+    color: var(--color-primary);
+
+}
+@media screen and (max-width:700px) 
+{ 
+    .box-login{
+        padding: 20px;
+    }
+    
+}
+
